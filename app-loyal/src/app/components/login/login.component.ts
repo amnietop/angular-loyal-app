@@ -13,16 +13,3 @@ export class LoginComponent implements OnInit {
   }
 
 }
-
-
-interface IHablar {
-  hablar (palabra:string):void;
-}
-
-class Persona implements IHablar {
-
-hablar(palabra: string): void {
-
-}
-
-}

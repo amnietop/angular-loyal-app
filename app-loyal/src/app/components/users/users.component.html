@@ -1,20 +1,19 @@
 <div>
-  <p> Nombre: {{nombre}} </p>
-  <p> Edad  : {{edad}} </p>
-
-  <p> articulo  : {{articulo | json}} </p>
-
-   {{lista}}
-  {{2+1}}
+  <label>Nombre: {{nombre}}</label>
+  <hr>
+  {{lista}}
+  {{2 + 1}}
+  {{ 2 === 2}}
 
   {{articulo.id}}
-
-  <p>{{articulo | json}} </p>
-  <p>getArticulo: {{getArticulo() | json}} </p>
-  <p>Sumar: {{sumar(5,10)}}</p>
+  {{articulo.titulo}}
+  {{articulo | json}}
 
   {{edad}}
+  {{alto}}
+  <hr>
+  {{getArticulo() | json }}
 
-
-
+  {{sumar(10,5)}}
 </div>
+

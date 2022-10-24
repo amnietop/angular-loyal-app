@@ -1,13 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-
-
-
-interface Articulo {
-  id:number,
-  titulo:string,
+export interface Articulo {
+  id: number,
+  titulo: string,
 }
-
 
 @Component({
   selector: 'app-users',
@@ -15,34 +11,29 @@ interface Articulo {
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-
-  nombre: string = 'Anp';
-  edad:number = 25;
-  alto:boolean = true;
-
-  articulo: Articulo ={
-    id:1,
-    titulo:'micro'
-  }
+  edad:number = 15;
+  nombre: string = 'carlos lopez';
   lista:string[] = [];
+  articulo: Articulo = {
+    id: 1,
+    titulo: 'microfono'
+  };
+  alto= true;
 
   constructor() {
+    //cargo la lista cuando nace el componente
     this.lista.push('primero');
     this.lista.push('segundo');
-    this.lista.push('tercero');
-
-    this.edad = 15;
   }
 
   ngOnInit(): void {
   }
 
-  getArticulo():Articulo {
+  getArticulo(): Articulo {
     return this.articulo;
   }
 
-  sumar(a:number,b:number){
+  sumar(a:number,b:number) {
     return a + b;
   }
-
 }

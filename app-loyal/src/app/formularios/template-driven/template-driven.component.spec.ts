@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SaldosComponent } from './saldos.component';
+import { TemplateDrivenComponent } from './template-driven.component';
 
-describe('SaldosComponent', () => {
-  let component: SaldosComponent;
-  let fixture: ComponentFixture<SaldosComponent>;
+describe('TemplateDrivenComponent', () => {
+  let component: TemplateDrivenComponent;
+  let fixture: ComponentFixture<TemplateDrivenComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SaldosComponent ]
+      declarations: [ TemplateDrivenComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SaldosComponent);
+    fixture = TestBed.createComponent(TemplateDrivenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
