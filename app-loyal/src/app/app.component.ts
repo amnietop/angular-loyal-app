@@ -12,6 +12,7 @@ export class AppComponent {
   applogin = 'applogin';
   nombres = ['juan','carlos','pedro'];
   nombre: string = '';
+  edad: number = 1;
 
   agregarNombre() {
     this.nombres.push(this.nombre);
@@ -28,5 +29,9 @@ export class AppComponent {
 
   cambiarClase() {
     this.applogin = 'otraClase';
+  }
+  public getEdad():number {
+    return this.edad;
+
   }
 }
